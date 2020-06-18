@@ -14,13 +14,20 @@ html {
 	height: 100%;
 	background-position: center 0;
 	opacity: 0;
-	// opacity: 0.7;
+	//opacity: 0.7;
 }
 
 body,
 html {
-	font-size: $em-base;
-	// @include font-size(1rem);
+	//font-size: $em-base;
+
+	font-size: 15px;
+	@include media-breakpoint-up(md) {
+		font-size: 16px;
+	}
+	@include media-breakpoint-up(xl){
+		font-size: 18px;
+	}
 }
 
 
@@ -31,7 +38,19 @@ html {
 }
 
 .section-title { 
-	padding-bottom: var(--sTPB);
+	//padding-bottom: var(--sTPB);
+
+	padding-top: rem(60);
+	h2{
+		font-weight: 700;
+
+		font-size: rem(25px);
+		line-height: rem(38px);
+		@include media-breakpoint-up(sm){
+			font-size: rem(36px);
+			line-height: rem(48.6px);
+		}
+	}
 }
 
 body {
@@ -389,4 +408,34 @@ img.img-bg,
 
 iframe {
 	border: none;
+}
+
+
+//default link
+a:not(.btn){
+	text-decoration: underline;
+	color: $info;
+	@include mt();
+	&:hover{
+		text-decoration: none;
+		color: darken($info, 10);
+	}
+}
+
+.btn-primary{
+	height: rem(60);
+	border-radius: rem(30px);
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: $white;
+
+	font-size: rem(16);
+	font-weight: 700;
+}
+
+.pointer-events-none{
+	pointer-events: none;
 }

@@ -1,7 +1,75 @@
+// start .sContact
+.sContact {
+	.section-title{
+		h2{
+			//margin-bottom: rem(29px);
+			margin-bottom: 29px;
+		}
+	}
+	&__map-box{
+		background-color: $white;
 
-	// start .sContact
-	.sContact {
-		 
+		width: 100vw;
+		position: relative;
+		left: calc(-1 * (100vw - 100%) / 2);
+
+		padding: rem(20) 0 0 0;
+		@include media-breakpoint-up(sm){
+			position: static;
+			left: 0;
+			width: 100%;
+
+			padding: rem(40);
+
+			border-radius: rem(30px);
+		}
+	}
+
+	&__address-txt{
+		width: 100%;
+
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 480px;
+		margin: 0 auto;
+		@include media-breakpoint-up(sm){
+			padding-left: 0;
+			padding-right: 0;
+			max-width: 100%;
+			margin: 0;
+		}
+
+		@include media-breakpoint-up(md){
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		p{
+			margin-bottom: rem(30px);
+			@include media-breakpoint-up(md){
+				margin-right: rem(36);
+			}
+
+			font-size: rem(18px);
+			line-height: rem(29.7px);
+		}
+	}
+	&__map-cont{
+		img{
+			@include media-breakpoint-up(sm){
+				border-radius: rem(30);
+			}
+			max-width: 100%;
+		}
+	}
+	&__{}
+	&__{}
+	&__{}
+	&__{}
+	&__{}
+
+
+
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

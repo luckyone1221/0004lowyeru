@@ -275,6 +275,106 @@ function eventHandler() {
 
 	});
 
+	//sProfile tooltips
+	$('.sProfile__achievment-item').mouseenter(function () {
+		let self = this;
+		let align;
+		window.setTimeout(function () {
+			align = calcTooltipsPos(self);
+			$(self).find('.tool-tip').addClass(align);
+		}, 10);
+
+		$(this).find('.tool-tip').fadeIn(function () {
+			$(this).addClass('active');
+		});
+	});
+	$('.sProfile__achievment-item').mouseleave(function () {
+		$(this).find('.tool-tip').fadeOut(function () {
+			$(this).removeClass('active');
+
+			$(this).removeClass('right-align');
+			$(this).removeClass('left-align');
+		});
+	});
+
+	//
+	function calcTooltipsPos(tooltipParent){
+		//let topPos = tooltipParent.getBoundingClientRect().top + window.scrollY;
+		let leftPos = tooltipParent.getBoundingClientRect().left + window.scrollX;
+		let windowWidth = window.innerWidth;
+
+		let tooltip = tooltipParent.querySelector('.tool-tip');
+		let tooltipWidth = tooltip.offsetWidth;
+
+		if (windowWidth - leftPos >  tooltipWidth){
+			return 'left-align'
+		}
+		else{
+			return 'right-align'
+		}
+	}
+
+	//sSpecAndServices
+	function togglePills(){
+		let grandParents = document.querySelectorAll('.great-parent-js');
+		for (let parent of grandParents) {
+			$(parent).find('.item-header-js').click(function () {
+				let self = this;
+
+				let thisDD = self.parentElement.querySelector('.item-dropdown-js');
+				if (!thisDD) return
+
+				let allItems = parent.querySelectorAll('.item-dropdown-js');
+
+				for (let item of allItems){
+					if (item !== thisDD){
+						/*item.parentElement.querySelector('.item-header-js').classList.remove('active');
+
+						$(item).slideUp(function () {
+							$(this).removeClass('active');
+						});*/
+					}
+				}
+
+				if (thisDD.classList.contains('active')){
+					$(self).removeClass('active');
+
+					$(thisDD).slideUp(function () {
+						$(this).removeClass('active');
+					});
+				}
+				else{
+					$(self).addClass('active');
+
+					$(thisDD).slideDown(function () {
+						$(this).addClass('active');
+					});
+				}
+			});
+		}
+	}
+	togglePills();
+	//sFeedback
+	$('.feedback-popup-js').click(function () {
+		event.preventDefault();
+		$('.feedback-pop-up-bl').fadeIn(function () {
+			$(this).toggleClass('active');
+		})
+		event.stopPropagation();
+		document.body.removeEventListener('click', removeFeedBackPopUp);
+		document.body.addEventListener('click', removeFeedBackPopUp);
+	});
+	function removeFeedBackPopUp(){
+		let clickOnPopUp = event.target.closest('.feedback-pop-up-bl');
+		if (clickOnPopUp) return
+		$('.feedback-pop-up-bl').fadeOut(function () {
+			$(this).toggleClass('active');
+		});
+		document.body.removeEventListener('click', removeFeedBackPopUp);
+	}
+
+	//
+
 	var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 	if (isIE11) {
 		$("body").prepend(`<p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p>`)

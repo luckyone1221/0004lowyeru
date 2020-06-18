@@ -1,0 +1,31 @@
+mixin sSpecAndServices()
+	// start sSpecAndServices
+	+b.SECTION.sSpecAndServices#sSpecAndServices&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Специализация и услуги
+			+e.spec-and-services-box.great-parent-js
+				+specItem('Семейные дела')
+				+specItem('Адвокаты, уголовные дела')
+				+specItem('Дела с недвижимостью')
+				+specItem('Споры с банками')
+				+specItem('Страховые случаи')
+				+specItem('Трудовые споры')
+				+specItem('Споры с госслужбами')
+				+specItem('Предпринимательство')
+	// end sSpecAndServices
+
+mixin specItem(ItemHeadline='ItemHeadline')
+	+e.item-contaiener
+		+e.item-header.item-header-js
+			+e.item-headline=ItemHeadline
+			+e.icon-box
+				+icon('plus')
+		+e.item-dropdown.item-dropdown-js
+			ul
+				li
+					a(href="#") Название услуги
+				li
+					a(href="#") Название услуги
+				li
+					a(href="#") Название услуги

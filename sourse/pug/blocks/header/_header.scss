@@ -1,7 +1,122 @@
+// start .header
+.header {
+	background-color: $white;
 
-	// start .header
-	.header {
-		 
+	min-height: 60px;
+	padding: 10px 0;
+	@include media-breakpoint-up(md){
+		min-height: 80px;
+		padding: 17px 0;
+	}
+
+	&__header-cont{
+		display: flex;
+		align-items: center;
+
+		flex-wrap: wrap;
+	}
+	//logo
+	&__logo{
+		max-width: 100px;
+		@include media-breakpoint-up(sm){
+			max-width: rem(163);
+		}
+
+
+		margin-right: 30px;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	//
+	&__city-ch-bl{
+		font-weight: 400;
+
+		font-size: rem(15);
+		@include media-breakpoint-up(xl){
+			margin-right: 97px;
+			font-size: 15px;
+		}
+
+		color: $secondary;
+		text-decoration: none !important;
+		.gray-txt{
+			text-decoration: none !important;
+		}
+		.blue-txt{
+			color: $info;
+			font-size: 15px;
+			text-decoration: underline;
+		}
+		.icon{
+			font-size: 10px;
+			color: $info;
+		}
+
+		&:hover{
+			.blue-txt{
+				text-decoration: none;
+			}
+		}
+	}
+	//
+	&__search-result-hint-txt{
+		font-size: 15px;
+		line-height: 18px;
+
+		a{
+
+		}
+	}
+	//
+	&__call-us-block{
+		margin-left: auto;
+		text-decoration: none !important;
+	}
+	&__desctop-var{
+
+		span{
+			display: block;
+		}
+		.call-us-txt{
+			color: $secondary;
+
+			font-size: 14px;
+			line-height: 17px;
+			margin-bottom: 8px;
+		}
+		.call-us-number{
+			color: $body-color;
+			font-weight: 600;
+			text-align: right;
+
+			font-size: 17px;
+			line-height: 22px;
+		}
+	}
+
+
+	&__mob-var{
+		background-color: $primary;
+		border-radius: 5px;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		.icon{
+			margin: auto;
+			color: $white;
+			font-size: 27px;
+		}
+	}
+	&__{}
+	&__{}
+	&__{}
+	&__{}
+	&__{}
+	&__{}
+
+
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

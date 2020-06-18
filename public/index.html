@@ -26,50 +26,787 @@
 	<body><!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
 		<div class="main-wrapper">
 			<!-- start header-->
-			<section class="header section" id="header">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>header</h2>
-					</div>
-					<div class="row"></div>
-				</div>
-			</section>
-			<!-- end header-->
-			<!-- start headerBlock-->
-			<div class="headerBlock section" id="headerBlock">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>headerBlock ds dfsdfdsfsd</h2>
-					</div>
-					<div class="row"></div>
+			<div class="header" id="header">
+				<div class="header__header-cont container"><a class="header__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a><a class="header__city-ch-bl" href="#"><span class="gray-txt"></span>Город:
+					<span class="blue-txt">Уфа</span>
+					<svg class="icon icon-chevron-down ">
+						<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+					</svg></a>
+					<div class="header__search-result-hint-txt d-none d-xl-block">
+						Я ищу юриста по
+						<a href="#">страховым случаям</a>,
+						<a href="#">неважно где</a>
+					</div><a class="header__call-us-block" href="tel:+73472000472"><span class="header__desctop-var d-none d-md-block"><span class="call-us-txt">Поможем найти юриста</span><span class="call-us-number">+7 (347) 200-04-72</span></span><span class="header__mob-var d-flex d-md-none">
+					<svg class="icon icon-phone ">
+						<use xlink:href="img/svg/sprite.svg#phone"></use>
+					</svg></span></a>
 				</div>
 			</div>
-			<!-- end headerBlock-->
-			<!-- start sForm-->
-			<section class="sForm section" id="sForm">
+			<!-- end header-->
+			<!-- start sProfile-->
+			<div class="sProfile" id="sProfile">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>sForm</h2>
+					<div class="sProfile__profile-box">
+						<div class="sProfile__img-block"><img src="img/@2x/profile-img.jpg" alt=""/>
+						</div>
+						<div class="sProfile__profile-content">
+							<div class="sProfile__name-and-spec-box">
+								<div class="sProfile__name-txt">Коршунов Александр&#160;Геннадьевич
+								</div>
+								<div class="sProfile__spec-txt">Страховые случаи, Споры с госслужбами
+								</div>
+							</div>
+							<div class="sProfile__txt-descr-pills">
+								<div class="sProfile__txt-descr-pill-item"><span>Стаж</span><span>21 год</span>
+								</div>
+								<div class="sProfile__txt-descr-pill-item"><span>Первичная консультация</span><span>Бесплатно</span>
+								</div>
+							</div>
+							<div class="sProfile__rate-and-ask-strip"><a class="sProfile__appeal-btn" href="#">Обратиться</a>
+								<div class="sProfile__rate-lowyeru-box">
+									<div class="sProfile__rate-lowyeru-txt"><span class="txt-bl">Рейтинг Лойе.ру</span><span class="help-icon">?</span>
+									</div>
+									<div class="sProfile__rate-lowyeru-num"><span>10</span><span>/10</span>
+									</div>
+								</div>
+							</div>
+							<div class="sProfile__achivements-box">
+								<div class="sProfile__achivements-headline">Достижения
+								</div>
+								<div class="sProfile__achievment-items-box">
+									<div class="sProfile__achievment-item"><img src="img/achievment-img-1.svg" alt=""/>
+										<div class="tool-tip">Паспорт проверен</div>
+									</div>
+									<div class="sProfile__achievment-item"><img src="img/achievment-img-2.svg" alt=""/>
+										<div class="tool-tip">Паспорт проверен 2</div>
+									</div>
+									<div class="sProfile__achievment-item"><img src="img/achievment-img-3.svg" alt=""/>
+										<div class="tool-tip">Паспорт проверен 3</div>
+									</div>
+									<div class="sProfile__achievment-item"><img src="img/achievment-img-4.svg" alt=""/>
+										<div class="tool-tip">Паспорт проверен 4</div>
+									</div>
+									<div class="sProfile__achievment-item"><img src="img/achievment-img-5.svg" alt=""/>
+										<div class="tool-tip">Паспорт проверен 5</div>
+									</div>
+									<div class="sProfile__achievment-item"><img src="img/achievment-img-6.svg" alt=""/>
+										<div class="tool-tip">Паспорт проверен 6</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="row"></div>
+				</div>
+			</div>
+			<!-- end sProfile-->
+			<!-- start sSpecAndServices-->
+			<section class="sSpecAndServices" id="sSpecAndServices">
+				<div class="container">
+					<div class="section-title">
+						<h2>Специализация и услуги</h2>
+					</div>
+					<div class="sSpecAndServices__spec-and-services-box great-parent-js">
+						<div class="sSpecAndServices__item-contaiener">
+							<div class="sSpecAndServices__item-header item-header-js">
+								<div class="sSpecAndServices__item-headline">Семейные дела
+								</div>
+								<div class="sSpecAndServices__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sSpecAndServices__item-dropdown item-dropdown-js">
+								<ul>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="sSpecAndServices__item-contaiener">
+							<div class="sSpecAndServices__item-header item-header-js">
+								<div class="sSpecAndServices__item-headline">Адвокаты, уголовные дела
+								</div>
+								<div class="sSpecAndServices__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sSpecAndServices__item-dropdown item-dropdown-js">
+								<ul>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="sSpecAndServices__item-contaiener">
+							<div class="sSpecAndServices__item-header item-header-js">
+								<div class="sSpecAndServices__item-headline">Дела с недвижимостью
+								</div>
+								<div class="sSpecAndServices__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sSpecAndServices__item-dropdown item-dropdown-js">
+								<ul>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="sSpecAndServices__item-contaiener">
+							<div class="sSpecAndServices__item-header item-header-js">
+								<div class="sSpecAndServices__item-headline">Споры с банками
+								</div>
+								<div class="sSpecAndServices__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sSpecAndServices__item-dropdown item-dropdown-js">
+								<ul>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="sSpecAndServices__item-contaiener">
+							<div class="sSpecAndServices__item-header item-header-js">
+								<div class="sSpecAndServices__item-headline">Страховые случаи
+								</div>
+								<div class="sSpecAndServices__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sSpecAndServices__item-dropdown item-dropdown-js">
+								<ul>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="sSpecAndServices__item-contaiener">
+							<div class="sSpecAndServices__item-header item-header-js">
+								<div class="sSpecAndServices__item-headline">Трудовые споры
+								</div>
+								<div class="sSpecAndServices__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sSpecAndServices__item-dropdown item-dropdown-js">
+								<ul>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="sSpecAndServices__item-contaiener">
+							<div class="sSpecAndServices__item-header item-header-js">
+								<div class="sSpecAndServices__item-headline">Споры с госслужбами
+								</div>
+								<div class="sSpecAndServices__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sSpecAndServices__item-dropdown item-dropdown-js">
+								<ul>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="sSpecAndServices__item-contaiener">
+							<div class="sSpecAndServices__item-header item-header-js">
+								<div class="sSpecAndServices__item-headline">Предпринимательство
+								</div>
+								<div class="sSpecAndServices__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sSpecAndServices__item-dropdown item-dropdown-js">
+								<ul>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+									<li><a href="#">Название услуги</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
-			<!-- end sForm-->
-			<!-- start sContact-->
-			<section class="sContact section" id="sContact">
+			<!-- end sSpecAndServices-->
+			<!-- start sAboutLawyer-->
+			<section class="sAboutLawyer" id="sAboutLawyer">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>sContact</h2>
+					<div class="section-title">
+						<h2>О юристе</h2>
 					</div>
-					<div class="row"></div>
+					<div class="row">
+						<div class="sAboutLawyer__descr-txt-col col-12 col-lg-8">
+							<div class="sAboutLawyer__descr-txt">
+								<p>Более 50&nbsp;уголовных дел, а&nbsp;гражданских и&nbsp;административных: более 200. Сумма выигранных и&nbsp;сбереженных средств: более 2&nbsp;700&nbsp;000&nbsp;₽. Выигранных дел об&nbsp;административных правонарушениях: 68&nbsp;%.</p>
+								<p>Квалифицированная юридическая помощь при ДТП (в&nbsp;том числе по&nbsp;уголовным делам), лишении права управления, судебных спорах о&nbsp;возмещении ущерба (в&nbsp;том числе споры со&nbsp;страховыми компаниями).</p>
+								<p>Я&nbsp;считаю, что адвокатская деятельность не&nbsp;является предпринимательской, поэтому не&nbsp;ставлю цель заработать деньги на&nbsp;ваших проблемах. Если ваше дело является необычным и&nbsp;представляет интерес, как прецедент, то&nbsp;я&nbsp;готов работать за&nbsp;символическую оплату и&nbsp;компенсацию понесенных расходов.</p>
+							</div>
+						</div>
+						<div class="sAboutLawyer__descr-pills-col col-12 col-lg-4">
+							<div class="sAboutLawyer__descr-pills">
+								<div class="sAboutLawyer__pill-cont">
+									<div class="sAboutLawyer__icon-cont">
+										<svg class="icon icon-check ">
+											<use xlink:href="img/svg/sprite.svg#check"></use>
+										</svg>
+									</div>
+									<div class="sAboutLawyer__txt-cont">Статус адвоката
+									</div>
+								</div>
+								<div class="sAboutLawyer__pill-cont">
+									<div class="sAboutLawyer__icon-cont">
+										<svg class="icon icon-check ">
+											<use xlink:href="img/svg/sprite.svg#check"></use>
+										</svg>
+									</div>
+									<div class="sAboutLawyer__txt-cont">Юридический стаж с&nbsp;2000г.
+									</div>
+								</div>
+								<div class="sAboutLawyer__pill-cont">
+									<div class="sAboutLawyer__icon-cont">
+										<svg class="icon icon-check ">
+											<use xlink:href="img/svg/sprite.svg#check"></use>
+										</svg>
+									</div>
+									<div class="sAboutLawyer__txt-cont">Специализация на&nbsp;автоделах с&nbsp;2008 года
+									</div>
+								</div>
+								<div class="sAboutLawyer__pill-cont">
+									<div class="sAboutLawyer__icon-cont">
+										<svg class="icon icon-check ">
+											<use xlink:href="img/svg/sprite.svg#check"></use>
+										</svg>
+									</div>
+									<div class="sAboutLawyer__txt-cont">Лучший юрист Прикамья 2009 года
+									</div>
+								</div>
+								<div class="sAboutLawyer__pill-cont">
+									<div class="sAboutLawyer__icon-cont">
+										<svg class="icon icon-check ">
+											<use xlink:href="img/svg/sprite.svg#check"></use>
+										</svg>
+									</div>
+									<div class="sAboutLawyer__txt-cont">Партнер компании «Автоюрист.ру»
+									</div>
+								</div>
+								<div class="sAboutLawyer__pill-cont">
+									<div class="sAboutLawyer__icon-cont">
+										<svg class="icon icon-check ">
+											<use xlink:href="img/svg/sprite.svg#check"></use>
+										</svg>
+									</div>
+									<div class="sAboutLawyer__txt-cont">Эксперт проекта «Ваше право» на радио «Спутник-ФМ»
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end sAboutLawyer-->
+			</section>
+			<!-- start sEducation-->
+			<section class="sEducation" id="sEducation">
+				<div class="container">
+					<div class="section-title">
+						<h2>Образование</h2>
+					</div>
+					<div class="sEducation__education-pills-box great-parent-js">
+						<div class="sEducation__item-contaiener">
+							<div class="sEducation__item-header item-header-js">
+								<div class="sEducation__item-headline">Основное
+								</div>
+								<div class="sEducation__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sEducation__item-dropdown item-dropdown-js">
+								<div class="drop-down-box">
+									<div class="drop-down-box__dd-item">
+										<div class="drop-down-box__year-strip">1999
+										</div>
+										<div class="drop-down-box__post-info-strip">
+											<div class="drop-down-box__post-txt">
+												<div class="post-descr">Ординатура по специальности &quot;Ревматология&quot;</div>
+												<div class="post-rank"></div>
+											</div><a class="drop-down-box__post-link" href="#">
+											<div class="watch-txt">Смотреть</div><span class="drop-down-box__post-link-icon-cont">
+											<svg class="icon icon-blank ">
+												<use xlink:href="img/svg/sprite.svg#blank"></use>
+											</svg></span></a>
+										</div>
+									</div>
+									<div class="drop-down-box__dd-item">
+										<div class="drop-down-box__year-strip">1985
+										</div>
+										<div class="drop-down-box__post-info-strip">
+											<div class="drop-down-box__post-txt">
+												<div class="post-descr">Интернатура по специальности &quot;Терапевт&quot;, Клиническая интернатура в Республиканской клинической больнице МЗ КБР</div>
+												<div class="post-rank"></div>
+											</div><a class="drop-down-box__post-link" href="#">
+											<div class="watch-txt">Смотреть</div><span class="drop-down-box__post-link-icon-cont">
+											<svg class="icon icon-blank ">
+												<use xlink:href="img/svg/sprite.svg#blank"></use>
+											</svg></span></a>
+										</div>
+									</div>
+									<div class="drop-down-box__dd-item">
+										<div class="drop-down-box__year-strip">1984
+										</div>
+										<div class="drop-down-box__post-info-strip">
+											<div class="drop-down-box__post-txt">
+												<div class="post-descr">Диплом по специальности &quot;Лечебное дело (Лечебно-профилактическое дело)&quot;, Кабардино-Балкарский государственный университет</div>
+												<div class="post-rank"></div>
+											</div><a class="drop-down-box__post-link" href="#">
+											<div class="watch-txt">Смотреть</div><span class="drop-down-box__post-link-icon-cont">
+											<svg class="icon icon-blank ">
+												<use xlink:href="img/svg/sprite.svg#blank"></use>
+											</svg></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sEducation__item-contaiener">
+							<div class="sEducation__item-header item-header-js">
+								<div class="sEducation__item-headline">Курсы повышения квалификации
+								</div>
+								<div class="sEducation__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sEducation__item-dropdown item-dropdown-js">
+								<div class="drop-down-box">
+									<div class="drop-down-box__dd-item">
+										<div class="drop-down-box__year-strip">2009-2010
+										</div>
+										<div class="drop-down-box__post-info-strip">
+											<div class="drop-down-box__post-txt">
+												<div class="post-descr">Врач-ревматолог, Медицинский консультативно-диагностический центр</div>
+												<div class="post-rank">Нальчик</div>
+											</div><a class="drop-down-box__post-link" href="#">
+											<div class="watch-txt">Смотреть</div><span class="drop-down-box__post-link-icon-cont">
+											<svg class="icon icon-blank ">
+												<use xlink:href="img/svg/sprite.svg#blank"></use>
+											</svg></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sEducation__item-contaiener">
+							<div class="sEducation__item-header item-header-js">
+								<div class="sEducation__item-headline">Опыт работы
+								</div>
+								<div class="sEducation__icon-box">
+									<svg class="icon icon-plus ">
+										<use xlink:href="img/svg/sprite.svg#plus"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="sEducation__item-dropdown item-dropdown-js">
+								<div class="drop-down-box">
+									<div class="drop-down-box__dd-item">
+										<div class="drop-down-box__year-strip">2009-2010
+										</div>
+										<div class="drop-down-box__post-info-strip">
+											<div class="drop-down-box__post-txt">
+												<div class="post-descr">Врач-ревматолог, Медицинский консультативно-диагностический центр</div>
+												<div class="post-rank">Нальчик</div>
+											</div><a class="drop-down-box__post-link" href="#">
+											<div class="watch-txt">Смотреть</div><span class="drop-down-box__post-link-icon-cont">
+											<svg class="icon icon-blank ">
+												<use xlink:href="img/svg/sprite.svg#blank"></use>
+											</svg></span></a>
+										</div>
+									</div>
+									<div class="drop-down-box__dd-item">
+										<div class="drop-down-box__year-strip">1999-2009
+										</div>
+										<div class="drop-down-box__post-info-strip">
+											<div class="drop-down-box__post-txt">
+												<div class="post-descr">Врач-ревматолог, Медицинский консультативно-диагностический центр</div>
+												<div class="post-rank">Нальчик</div>
+											</div><a class="drop-down-box__post-link" href="#">
+											<div class="watch-txt">Смотреть</div><span class="drop-down-box__post-link-icon-cont">
+											<svg class="icon icon-blank ">
+												<use xlink:href="img/svg/sprite.svg#blank"></use>
+											</svg></span></a>
+										</div>
+									</div>
+									<div class="drop-down-box__dd-item">
+										<div class="drop-down-box__year-strip">1991-1999
+										</div>
+										<div class="drop-down-box__post-info-strip">
+											<div class="drop-down-box__post-txt">
+												<div class="post-descr">Врач-ревматолог, Медицинский консультативно-диагностический центр</div>
+												<div class="post-rank">Нальчик</div>
+											</div><a class="drop-down-box__post-link" href="#">
+											<div class="watch-txt">Смотреть</div><span class="drop-down-box__post-link-icon-cont">
+											<svg class="icon icon-blank ">
+												<use xlink:href="img/svg/sprite.svg#blank"></use>
+											</svg></span></a>
+										</div>
+									</div>
+									<div class="drop-down-box__dd-item">
+										<div class="drop-down-box__year-strip">1988- 1991
+										</div>
+										<div class="drop-down-box__post-info-strip">
+											<div class="drop-down-box__post-txt">
+												<div class="post-descr">Врач функциональной диагностики, Республиканский кардиологический диспансер</div>
+												<div class="post-rank">Нальчик</div>
+											</div><a class="drop-down-box__post-link" href="#">
+											<div class="watch-txt">Смотреть</div><span class="drop-down-box__post-link-icon-cont">
+											<svg class="icon icon-blank ">
+												<use xlink:href="img/svg/sprite.svg#blank"></use>
+											</svg></span></a>
+										</div>
+									</div>
+									<div class="drop-down-box__dd-item">
+										<div class="drop-down-box__year-strip">1985-1988
+										</div>
+										<div class="drop-down-box__post-info-strip">
+											<div class="drop-down-box__post-txt">
+												<div class="post-descr">Врач функциональной диагностики, Республиканский кардиологический диспансер</div>
+												<div class="post-rank">Нальчик</div>
+											</div><a class="drop-down-box__post-link" href="#">
+											<div class="watch-txt">Смотреть</div><span class="drop-down-box__post-link-icon-cont">
+											<svg class="icon icon-blank ">
+												<use xlink:href="img/svg/sprite.svg#blank"></use>
+											</svg></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sEducation-->
+			<!-- start sContact-->
+			<section class="sContact" id="sContact">
+				<div class="container">
+					<div class="section-title">
+						<h2>Контакты</h2>
+					</div>
+					<div class="sContact__map-box">
+						<div class="sContact__address-txt">
+							<p>г. Уфа, ул. Мира, д. 16, офис 626</p>
+							<p>Без выходных с 10:00 до 20:00</p>
+						</div>
+						<div class="sContact__map-cont"><img src="img/@2x/sContact-map.jpg" alt=""/>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- end sContact-->
-			<footer class="footer block-with-lazy">
+			<!-- start sFeedBack-->
+			<section class="sFeedBack" id="sFeedBack">
 				<div class="container">
-					<h2>footer</h2>
+					<div class="section-title">
+						<h2>Отзывы (3)</h2>
+					</div>
+					<div class="sFeedBack__feedback-box">
+						<div class="sFeedBack__header">
+							<div class="sFeedBack__general-rate">
+								<div class="sFeedBack__general-rate-txt">Общий рейтинг
+								</div>
+								<div class="sFeedBack__stars-cont">
+									<div class="star-icon-cont">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="star-icon-cont">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="star-icon-cont">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="star-icon-cont">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="star-icon-cont transparent-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="sFeedBack__hader-feedback-info"><a class="feedback-popup-js" href="#">Как мы собираем отзывы?</a>
+								<div class="feedback-pop-up-bl">
+									<div class="feedback-pop-up-bl__headline">Мы сами обзваниваем клиентов и собираем отзывы
+									</div>
+									<div class="feedback-pop-up-bl__after-headline-txt">Если находим фейки — блокируем юриста.
+									</div>
+									<div class="feedback-pop-up-bl__pills-block">
+										<div class="feedback-pop-up-bl__pill-txt">Юрист находит клиента и оказывает услугу
+										</div>
+										<div class="feedback-pop-up-bl__pill-txt">По итогу работы мы связываемся с клиентом и узнаем его мнение
+										</div>
+										<div class="feedback-pop-up-bl__pill-txt">Если выясняем, что клиент ненастоящий, а отзыв фейковый — блокируем юриста на Лойе.ру
+										</div>
+									</div>
+									<div class="feedback-pop-up-bl__after-pills-txt">Юрист не влияет на собираемые отзывы.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="feedbacks-cont">
+							<div class="feedbacks-cont__item">
+								<div class="feedbacks-cont__name-and-num-strip">
+									<div class="feedbacks-cont__name-txt">Сергей
+									</div>
+									<div class="feedbacks-cont__num-txt">+7 (92*) ***-**68
+									</div>
+								</div>
+								<div class="feedbacks-cont__rate-in-detail">
+									<div class="feedbacks-cont__rate-in-detail-item">
+										<div class="feedbacks-cont__detail-name">Квалификация
+										</div>
+										<div class="feedbacks-cont__stars-cont">
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="feedbacks-cont__rate-in-detail-item">
+										<div class="feedbacks-cont__detail-name">Внимание
+										</div>
+										<div class="feedbacks-cont__stars-cont">
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="feedbacks-cont__rate-in-detail-item">
+										<div class="feedbacks-cont__detail-name">Цена/результат
+										</div>
+										<div class="feedbacks-cont__stars-cont">
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="feedbacks-cont__feedback-txt">Меня обвиняли в том, что я управлял автомобилем в состоянии алкогольного опьянения. В результате противоречий, найденных в материалах, дело прекращено!
+								</div>
+								<div class="feedbacks-cont__feedback-date">15 декабря 2014
+								</div>
+							</div>
+							<div class="feedbacks-cont__item">
+								<div class="feedbacks-cont__name-and-num-strip">
+									<div class="feedbacks-cont__name-txt">Сергей
+									</div>
+									<div class="feedbacks-cont__num-txt">+7 (92*) ***-**68
+									</div>
+								</div>
+								<div class="feedbacks-cont__rate-in-detail">
+									<div class="feedbacks-cont__rate-in-detail-item">
+										<div class="feedbacks-cont__detail-name">Квалификация
+										</div>
+										<div class="feedbacks-cont__stars-cont">
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="feedbacks-cont__rate-in-detail-item">
+										<div class="feedbacks-cont__detail-name">Внимание
+										</div>
+										<div class="feedbacks-cont__stars-cont">
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="feedbacks-cont__rate-in-detail-item">
+										<div class="feedbacks-cont__detail-name">Цена/результат
+										</div>
+										<div class="feedbacks-cont__stars-cont">
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+											<div class="star-icon-cont">
+												<svg class="icon icon-star ">
+													<use xlink:href="img/svg/sprite.svg#star"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="feedbacks-cont__feedback-txt">Мне вменялся отказ от медицинского освидетельствования (ч. 1 ст. 12.28 КоАП РФ). Александр Геннадьевич показал, что освидетельствование должностным лицом проводилось с грубыми процессуальными нарушениями. В итоге судья прекратил дело в связи с отсутствием состава 
+								</div>
+								<div class="feedbacks-cont__feedback-date">15 декабря 2014
+								</div>
+							</div>
+						</div>
+					</div><a class="sFeedBack__appy-btn" href="#">Обратиться</a>
 				</div>
-			</footer>
+			</section>
+			<!-- end sFeedBack-->
 		</div>
 		<div class="d-none">
 			<div class="form-wrap modal-win modal-form" id="modal-call">

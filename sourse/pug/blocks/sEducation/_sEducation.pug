@@ -1,0 +1,45 @@
+mixin sEducation()
+	// start sEducation
+	+b.SECTION.sEducation#sEducation&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Образование
+			+e.education-pills-box.great-parent-js
+				+educationItem('Основное')
+					+educationDdItem('1999', 'Ординатура по специальности "Ревматология"', '', true)
+					+educationDdItem('1985', 'Интернатура по специальности "Терапевт", Клиническая интернатура в Республиканской клинической больнице МЗ КБР', '', true)
+					+educationDdItem('1984', 'Диплом по специальности "Лечебное дело (Лечебно-профилактическое дело)", Кабардино-Балкарский государственный университет', '', true)
+				+educationItem('Курсы повышения квалификации')
+					+educationDdItem('2009-2010', 'Врач-ревматолог, Медицинский консультативно-диагностический центр', 'Нальчик', true)
+				+educationItem('Опыт работы')
+					+educationDdItem('2009-2010', 'Врач-ревматолог, Медицинский консультативно-диагностический центр', 'Нальчик', true)
+					+educationDdItem('1999-2009', 'Врач-ревматолог, Медицинский консультативно-диагностический центр', 'Нальчик', true)
+					+educationDdItem('1991-1999', 'Врач-ревматолог, Медицинский консультативно-диагностический центр', 'Нальчик', true)
+					+educationDdItem('1988- 1991', 'Врач функциональной диагностики, Республиканский кардиологический диспансер', 'Нальчик', true)
+					+educationDdItem('1985-1988', 'Врач функциональной диагностики, Республиканский кардиологический диспансер', 'Нальчик', true)
+	// end sEducation
+
+
+
+mixin educationItem(ItemHeadline='ItemHeadline')
+	+e.item-contaiener
+		+e.item-header.item-header-js
+			+e.item-headline=ItemHeadline
+			+e.icon-box
+				+icon('plus')
+		+e.item-dropdown.item-dropdown-js
+			+b.drop-down-box
+				block
+
+mixin educationDdItem(Year='1999-2009', PostDescr='PostDescr', PostRank='PostRank', hasPostLink=true)
+	+e.dd-item
+		+e.year-strip=Year
+		+e.post-info-strip
+			+e.post-txt
+				.post-descr=PostDescr
+				.post-rank=PostRank
+			if hasPostLink
+				+e.A.post-link(href='#')
+					.watch-txt Смотреть
+					+e.post-link-icon-cont
+						+icon('blank')

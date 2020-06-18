@@ -1,9 +1,13 @@
 mixin sContact()
 	// start sContact
-	+b.SECTION.sContact.section#sContact&attributes(attributes)
+	+b.SECTION.sContact#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
-			.row
+			+b.section-title
+				h2 Контакты
+			+e.map-box
+				+e.address-txt
+					p г. Уфа, ул. Мира, д. 16, офис 626
+					p Без выходных с 10:00 до 20:00
+				+e.map-cont
+					img(src="img/@2x/sContact-map.jpg" alt="")
 	// end sContact

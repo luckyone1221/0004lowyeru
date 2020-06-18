@@ -1,0 +1,44 @@
+mixin sProfile()
+	// start sProfile
+	+b.sProfile#sProfile&attributes(attributes)
+		.container
+			+e.profile-box
+				+e.img-block
+					img(src="img/@2x/profile-img.jpg" alt="")
+				+e.profile-content
+					+e.name-and-spec-box
+						+e.name-txt Коршунов Александр&#160;Геннадьевич
+						+e.spec-txt Страховые случаи, Споры с госслужбами
+					+e.txt-descr-pills
+						+e.txt-descr-pill-item
+							span Стаж
+							span 21 год
+						+e.txt-descr-pill-item
+							span Первичная консультация
+							span Бесплатно
+					+e.rate-and-ask-strip
+						+e.A.appeal-btn(href="#") Обратиться
+						+e.rate-lowyeru-box
+							+e.rate-lowyeru-txt
+								span.txt-bl Рейтинг Лойе.ру
+								span.help-icon ?
+							+e.rate-lowyeru-num
+								span 10
+								span /10
+					+e.achivements-box
+						+e.achivements-headline Достижения
+						+e.achievment-items-box
+							+achievmentItem(1, 'Паспорт проверен')
+							+achievmentItem(2, 'Паспорт проверен 2')
+							+achievmentItem(3, 'Паспорт проверен 3')
+							+achievmentItem(4, 'Паспорт проверен 4')
+							+achievmentItem(5, 'Паспорт проверен 5')
+							+achievmentItem(6, 'Паспорт проверен 6')
+
+
+	// end sProfile
+
+mixin achievmentItem(imgNum, tooltipTxt)
+	+e.achievment-item&attributes(attributes)
+		img(src=`img/achievment-img-${imgNum}.svg` alt="")
+		.tool-tip=tooltipTxt

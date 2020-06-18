@@ -1,0 +1,69 @@
+mixin sFeedBack()
+	// start sFeedBack
+	+b.SECTION.sFeedBack#sFeedBack&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Отзывы (3)
+			+e.feedback-box
+				+e.header
+					+e.general-rate
+						+e.general-rate-txt Общий рейтинг
+						+e.stars-cont
+							.star-icon-cont
+								+icon('star')
+							.star-icon-cont
+								+icon('star')
+							.star-icon-cont
+								+icon('star')
+							.star-icon-cont
+								+icon('star')
+							.star-icon-cont.transparent-star
+								+icon('star')
+					+e.hader-feedback-info
+						a.feedback-popup-js(href="#") Как мы собираем отзывы?
+						+feedbackPopUp()
+				+b.feedbacks-cont
+					+feedBackItem('Меня обвиняли в том, что я управлял автомобилем в состоянии алкогольного опьянения. В результате противоречий, найденных в материалах, дело прекращено!')
+					+feedBackItem('Мне вменялся отказ от медицинского освидетельствования (ч. 1 ст. 12.28 КоАП РФ). Александр Геннадьевич показал, что освидетельствование должностным лицом проводилось с грубыми процессуальными нарушениями. В итоге судья прекратил дело в связи с отсутствием состава ')
+			+e.A.appy-btn(href="#") Обратиться
+	// end sFeedBack
+mixin feedbackPopUp()
+	+b.feedback-pop-up-bl
+		+e.headline Мы сами обзваниваем клиентов и собираем отзывы
+		+e.after-headline-txt Если находим фейки — блокируем юриста.
+		+e.pills-block
+			+e.pill-txt Юрист находит клиента и оказывает услугу
+			+e.pill-txt По итогу работы мы связываемся с клиентом и узнаем его мнение
+			+e.pill-txt Если выясняем, что клиент ненастоящий, а отзыв фейковый — блокируем юриста на Лойе.ру
+		+e.after-pills-txt Юрист не влияет на собираемые отзывы.
+
+mixin feedBackItem(feedbackTxt='feedbackTxt')
+	+e.item
+		+e.name-and-num-strip
+			+e.name-txt Сергей
+			+e.num-txt +7 (92*) ***-**68
+		+e.rate-in-detail
+			+e.rate-in-detail-item
+				+e.detail-name Квалификация
+				+starsCont()
+			+e.rate-in-detail-item
+				+e.detail-name Внимание
+				+starsCont()
+			+e.rate-in-detail-item
+				+e.detail-name Цена/результат
+				+starsCont()
+		+e.feedback-txt=feedbackTxt
+		+e.feedback-date 15 декабря 2014
+
+mixin starsCont()
+	+e.stars-cont
+		.star-icon-cont
+			+icon('star')
+		.star-icon-cont
+			+icon('star')
+		.star-icon-cont
+			+icon('star')
+		.star-icon-cont
+			+icon('star')
+		.star-icon-cont
+			+icon('star')

@@ -1,9 +1,26 @@
 mixin header()
 	// start header
-	+b.SECTION.header.section#header&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 header
-				
-			.row
+	+b.header#header&attributes(attributes)
+		+e.header-cont.container
+			+e.A.logo(href="/")
+				img(src='img/@2x/logo.png' alt="")
+			+e.A.city-ch-bl(href='#')
+				span.gray-txt
+				| Город:
+				|
+				span.blue-txt Уфа
+				+icon('chevron-down')
+			+e.search-result-hint-txt.d-none.d-xl-block
+				| Я ищу юриста по
+				|
+				a(href="#") страховым случаям
+				|,
+				|
+				a(href="#") неважно где
+			+e.A.call-us-block(href="tel:+73472000472")
+				+e.desctop-var.d-none.d-md-block
+					span.call-us-txt Поможем найти юриста
+					span.call-us-number +7 (347) 200-04-72
+				+e.mob-var.d-flex.d-md-none
+					+icon('phone')
 	// end header

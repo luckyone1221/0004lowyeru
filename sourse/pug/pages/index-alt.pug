@@ -1,0 +1,27 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+
+include ../blocks/sProfile/_sProfile.pug
+include ../blocks/sProfileAlt/_sProfileAlt.pug
+
+include ../blocks/sSpecAndServices/_sSpecAndServices.pug
+include ../blocks/sAboutLawyer/_sAboutLawyer.pug
+include ../blocks/sEducation/_sEducation.pug
+include ../blocks/sFeedBack/_sFeedBack.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'title'
+	title= title
+block pagecontent
+	+header()
+	+sProfileAlt()
+	+sSpecAndServices()
+	+sAboutLawyer()
+	+sEducation()
+	+sContact()
+	+sFeedBack()

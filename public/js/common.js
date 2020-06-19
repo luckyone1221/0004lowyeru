@@ -133,7 +133,7 @@ function eventHandler() {
 	JSCCommon.inputMask(); // JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
 
-	$(".main-wrapper").after('<div class="pixel-perfect" style="background-image: url(screen/main.jpg);"></div>'); // /добавляет подложку для pixel perfect
+	$(".main-wrapper").after('<div class="pixel-perfect" style="background-image: url(screen/main-alt.png);"></div>'); // /добавляет подложку для pixel perfect
 	// const url = document.location.href;
 	// $.each($(".top-nav__nav a "), function() {
 	// 	if (this.href == url) {
@@ -249,7 +249,8 @@ function eventHandler() {
 		}).fail(function () {});
 	}); //sProfile tooltips
 
-	$('.sProfile__achievment-item').mouseenter(function () {
+	$('.achivements-box__achievment-item').mouseenter(function () {
+		if (event.target.classList.contains('tool-tip')) return;
 		var self = this;
 		var align;
 		window.setTimeout(function () {
@@ -260,7 +261,7 @@ function eventHandler() {
 			$(this).addClass('active');
 		});
 	});
-	$('.sProfile__achievment-item').mouseleave(function () {
+	$('.achivements-box__achievment-item').mouseleave(function () {
 		$(this).find('.tool-tip').fadeOut(function () {
 			$(this).removeClass('active');
 			$(this).removeClass('right-align');

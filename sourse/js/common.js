@@ -128,7 +128,7 @@ function eventHandler() {
 
 	// JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
-	$(".main-wrapper").after('<div class="pixel-perfect" style="background-image: url(screen/main.jpg);"></div>')
+	$(".main-wrapper").after('<div class="pixel-perfect" style="background-image: url(screen/main-alt.png);"></div>')
 	// /добавляет подложку для pixel perfect
 
 
@@ -276,7 +276,9 @@ function eventHandler() {
 	});
 
 	//sProfile tooltips
-	$('.sProfile__achievment-item').mouseenter(function () {
+	$('.achivements-box__achievment-item').mouseenter(function () {
+		if (event.target.classList.contains('tool-tip')) return
+
 		let self = this;
 		let align;
 		window.setTimeout(function () {
@@ -288,7 +290,7 @@ function eventHandler() {
 			$(this).addClass('active');
 		});
 	});
-	$('.sProfile__achievment-item').mouseleave(function () {
+	$('.achivements-box__achievment-item').mouseleave(function () {
 		$(this).find('.tool-tip').fadeOut(function () {
 			$(this).removeClass('active');
 

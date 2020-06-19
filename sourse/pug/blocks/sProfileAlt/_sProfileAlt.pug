@@ -1,0 +1,65 @@
+mixin sProfileAlt()
+	// start sProfileAlt
+	+b.sProfileAlt#sProfileAlt&attributes(attributes)
+		.container
+			+e.profile-box
+				//-1
+				+e.img-block
+					+e.img-box
+						img(src="img/@2x/profile-img.jpg" alt="")
+					+e.rate-block
+						+e.rate-txt Рейтинг Лойе.ру
+						+e.mark-block
+							span.curr-mark 10
+							span.max-mark /10
+							+e.info-btn ?
+				//-2
+				+e.lawyer-info-bl
+					+e.name-txt Коршунов Александр&#160;Геннадьевич
+					+e.spec-txt Страховые случаи, Споры с госслужбами
+					+e.descr-pills-box
+						+descrPillItem('21', 'Стаж')
+							+e.descr-pill-contetn 21 год
+						+descrPillItem('0₽', 'Первичная консультация')
+							+e.descr-pill-contetn Бесплатно
+						+descrPillItem('5.0', 'Отзывы: 3')
+							+e.star-box
+								+e.stars-cont
+									.star-icon-cont
+										+icon('star')
+									.star-icon-cont
+										+icon('star')
+									.star-icon-cont
+										+icon('star')
+									.star-icon-cont
+										+icon('star')
+									.star-icon-cont.transparent-star
+										+icon('star')
+					+b.achivements-box
+						+e.achivements-headline Достижения
+						+e.achievment-items-box
+							+achievmentItem(1, 'Паспорт проверен')
+							+achievmentItem(2, 'Паспорт проверен 2')
+							+achievmentItem(3, 'Паспорт проверен 3')
+							+achievmentItem(4, 'Паспорт проверен 4')
+							+achievmentItem(5, 'Паспорт проверен 5')
+							+achievmentItem(6, 'Паспорт проверен 6')
+				//-3
+				+e.map-block
+					+e.map-box
+						+e.header
+							+e.map-address г. Уфа, ул. Мира, д. 16, офис 626
+							+e.map-shedule-txt По будням с 10:00 до 20:00
+						+e.map-container
+							img(src="img/@2x/sContact-map.jpg" alt="")
+					+e.A.turn-btn(href="#") Обратиться
+
+
+	// end sProfileAlt
+
+mixin descrPillItem(blueBox='BB', headline='headline')
+	+e.descr-pill-item
+		+e.descr-blue-box=blueBox
+		+e.descr-pill-txt-block
+			+e.descr-pill-headline=headline
+			block

@@ -195,10 +195,11 @@
 		}
 
 		&:hover{
+			color: $info;
 			.watch-txt{
-				opacity: 0.8;
-				text-decoration: none !important;
+				color: $info;
 			}
+
 		}
 	}
 	&__post-link-icon-cont{

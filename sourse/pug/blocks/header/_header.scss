@@ -39,9 +39,10 @@
 			font-size: 15px;
 		}
 
-		color: $secondary;
+		color: $secondary !important;
 		text-decoration: none !important;
 		.gray-txt{
+
 			text-decoration: none !important;
 		}
 		.blue-txt{
@@ -62,8 +63,17 @@
 	}
 	//
 	&__search-result-hint-txt{
-		font-size: 15px;
-		line-height: 18px;
+		order: 1;
+		width: 100%;
+		margin-top: 10px;
+		@include media-breakpoint-up(xl){
+			order: 0;
+			width: auto;
+			margin-top: 0px;
+		}
+
+		font-size: rem(15px);
+		line-height: rem(18px);
 
 		a{
 

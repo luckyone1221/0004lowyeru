@@ -225,14 +225,16 @@
 	right: 0;
 
 	width: calc(100vw - 30px);
+	//max-width: calc(100vw - 30px);
 	left: calc(-1 * (100vw - 100% - 30px) / 2);
+
 	@include media-breakpoint-up(sm){
 		width: auto;
 		left: unset;
+		min-width: 400px;
 	}
 
-	min-width: 400px;
-	min-height: 200px;
+
 
 
 
